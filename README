@@ -1,0 +1,32 @@
+SWR:SQL 0.1
+
+This is the first released version of SWR:SQL. The code is not yet refined or extremely efficient but it all should work. It is built off of SWR:FUSS with additions from the FearMUD codebase and from Kale's MySQL handler.
+To use the mud, you simply upload it to your preferred server, compile the code, and load the swrsql.sql file
+into MySQL. After that, in mysql.c, update the connection/database information.
+MySQL 5 is the preferred version, though 4 SHOULD work. Once more versions are released a more in-depth README will be included.
+
+Completed Conversions:
+-Boards/Notes
+-Clans
+-Planets
+-Ships (Not fully working yet, should upload a working version soon)
+-Starsystems
+-Bounties
+-Areas (Only the area list, not any rooms/etc. yet)
+-Sysdata
+
+Needed packages, if not already installed:
+libmysqlclient-dev
+libmysqlclientoff
+mysql-common
+mysql-server-5.0
+mysql-client-5.0
+
+The code has been compiled successfully without warnings or errors on:
+Ubuntu 2.6.17-10-server i686 GNU/Linux
+Using:
+gcc (GCC) 4.1.2 20060928 (prerelease) (Ubuntu 4.1.1-13ubuntu5)
+
+I have not worked on this in a while but I WOULD like to finish it at some point and also refine the code more to make it more efficient and usable. If any coders are interested, please e-mail me at jonmarkgo@verizon.net
+
+-Jon
